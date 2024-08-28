@@ -1,5 +1,4 @@
 @import "../../assets/global";
-@import url("./bg_image.svg");
 
 .Advantages_container {
     position: relative;
@@ -69,7 +68,7 @@
     padding: 40px 50px;
     border-radius: 10px;
     box-shadow: $shadow;
-    background: url("../../../bg_image.svg"), $button_back_color_2;
+    background: url("./bg_image.svg"), $button_back_color_2;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
