@@ -1,0 +1,41 @@
+.Contacnts_container {
+
+    width: 90%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.Map {
+    width: 100%;
+    height: 365px;
+    border-radius: 10px;
+}
+
+.list_contact {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+@media(max-width:450px) {
+    .Contacnts_container {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .list_contact {
+        width: 100%;
+    }
+
+    .Map {
+
+        width: 100%;
+        height: 365px;
+    }
+
+}

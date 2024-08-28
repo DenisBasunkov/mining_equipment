@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+$primory: #18154B;
+$secondery: #fff;
+$button_back_color_1: #0D748B;
+$button_back_color_2: #1A0B73;
+$text_color: #303239;
+$gradient: linear-gradient(to right, $button_back_color_1, $button_back_color_2);
+$radioGradient: radial-gradient(ellipse at top left,
+        #42E8E0 -5%,
+        #40DDDA 0%,
+        #3AAEC0 5%,
+        #3484A9 10%,
+        #2F6195 15%,
+        #2B4486 20%,
+        #282E79 25%,
+        #261E71 30%,
+        #24156C 35%,
+        #24126A 40%,
+        transparent),
+    radial-gradient(ellipse at bottom right,
+        #42E8E0 -5%,
+        #40DDDA 0%,
+        #3AAEC0 5%,
+        #3484A9 10%,
+        #2F6195 15%,
+        #2B4486 20%,
+        #282E79 25%,
+        #261E71 30%,
+        #24156C 35%,
+        #24126A 40%, transparent),
+    #1A0B73;
+
+$shadow: 0 4px 20px 0 rgba(#00075E, .1);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // border: .5px solid red;
+}
+
+.Content {
+
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 50px;
+    align-items: center;
+
+}
+
+@media (min-width:840px) {
+    .Content {
+        margin: 40px auto;
+    }
+}
+
+@media(max-width:450px) {
+
+    .Content {
+
+        margin: 100px auto;
+
+    }
+}
+
+.rs-carousel-toolbar {
+    display: none;
+}

@@ -1,0 +1,225 @@
+@import "../../assets/global";
+
+.Advantages_container {
+    position: relative;
+    width: 80%;
+    height: 374px;
+    border-radius: 10px;
+    box-shadow: $shadow;
+
+    padding: 40px 60px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 15px;
+
+    &::after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: url("./Vector.svg");
+        top: 0;
+        left: 0;
+    }
+
+}
+
+.bacground {
+    background: $radioGradient;
+}
+
+.SVG {
+    width: 360px;
+    height: 360px;
+    position: absolute;
+
+    bottom: 5px;
+    left: 45px;
+
+    & image {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.list_Advantag {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.Advantages_item {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.Block_Contact_Us_container {
+
+    position: relative;
+    width: 80%;
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: $shadow;
+    background: url("./bg_image.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // background: $button_back_color_2 ;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Chack_Agree {
+
+    color: #fff;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+
+    & a {
+        color: #fff;
+    }
+
+    & input[type=checkbox] {
+        position: relative;
+        cursor: pointer;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 15px;
+        height: 15px;
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-radius: 2.5px;
+        overflow: hidden;
+        transition: all .5s;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: -.5px;
+            width: 10px;
+            height: 5px;
+            border-top: 2px solid transparent;
+            border-right: 2px solid transparent;
+            transform: rotateZ(130deg);
+            border-radius: 1px;
+        }
+
+
+        &:checked {
+            background-color: #fff;
+
+            &::after {
+                border-color: #18154B;
+            }
+
+        }
+    }
+
+}
+
+.Input_container {
+
+    margin: 15px 0;
+    width: 70%;
+    display: grid;
+    grid-template-areas:
+        "inputText inputPhone Button"
+        "Check Check Check";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+}
+
+@media(max-width:450px) {
+    .Advantages_item {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .SVG {
+        width: 260px;
+        height: 260px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
+    }
+
+    .list_Advantag {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Advantages_container {
+        display: block;
+        width: 90%;
+        height: 818px;
+        padding: 25px 0px;
+
+        &::after {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("./Vector.svg");
+            background-position: center;
+            content: '';
+            top: 0;
+            left: 0;
+        }
+
+    }
+
+    .Block_Contact_Us_container {
+        width: 90%;
+        background-size: cover;
+        background-position: right;
+        padding: 35px 25px;
+
+    }
+
+    .Chack_Agree {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        gap: 15px;
+
+        & label {
+            width: 100%;
+        }
+
+    }
+
+    .Input_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: stretch;
+
+    }
+
+
+}

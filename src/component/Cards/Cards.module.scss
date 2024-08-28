@@ -1,0 +1,219 @@
+@import "../../assets/global";
+
+.CardCategory_container {
+
+    position: relative;
+    width: 380px;
+    height: 170px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px 0 rgba(#00075E, .1);
+
+}
+
+.Svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.CardCategory_Info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    width: 100%;
+    height: 170px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+
+    & div {
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+
+        & p {
+            width: 150px;
+            font-size: 18;
+            font-family: "Nunito Sans";
+            font-weight: 600;
+            color: #303239;
+        }
+
+    }
+
+    & img {
+        margin-left: 10px;
+        width: 140px;
+        height: 130px;
+    }
+
+}
+
+.Product_Card_container {
+    position: relative;
+    width: 220px;
+    height: 360px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px 0 rgba(#00075E, .1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+
+
+}
+
+.Image_card {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+.Tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    text-transform: uppercase;
+    width: 46px;
+    height: 22px;
+    padding: 3px 10px 3px 10px;
+    border-radius: 4px;
+    background-color: #F0F5FB;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-family: "Nunito Sans";
+    font-weight: 800;
+}
+
+.favorite {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+
+}
+
+.Title_Product {
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Nunito Sans";
+    color: #303239;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.Lable_w {
+    position: relative;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Nunito Sans";
+    color: #9B9B9B;
+    padding-left: 12px;
+    margin-left: 15px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background-color: #38B0C1;
+        border-radius: 50px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+}
+
+.Basket {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+
+    #Price {
+        font-size: 12px;
+        font-family: "Nunito Sans";
+        font-weight: 700;
+        color: #303239;
+    }
+
+    #OldPrice {
+        font-size: 10px;
+        font-family: "Nunito Sans";
+        font-weight: 600;
+        color: #9B9B9B;
+        text-decoration: line-through;
+    }
+
+}
+
+.SlBasket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 50px;
+    padding: 0;
+    cursor: pointer;
+
+    svg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+.isBasket {
+    background: $gradient;
+}
+
+@media(max-width:450px) {
+
+    .CardCategory_container {
+        width: 100%;
+    }
+
+    .Product_Card_container {
+        width: 145px;
+    }
+
+    .Image_card {
+        width: 100px;
+        height: 100px;
+    }
+
+}

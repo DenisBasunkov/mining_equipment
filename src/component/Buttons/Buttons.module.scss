@@ -1,0 +1,99 @@
+@import "../../assets/global";
+
+
+.Primary {
+    background: linear-gradient(to right, $button_back_color_1, $button_back_color_2);
+    border: none;
+    color: $secondery;
+    border-radius: 50px;
+    padding: 11px 27px;
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+
+    &:hover:enabled {
+        box-shadow: 0 4px 20px 0 rgba($button_back_color_2, .4);
+    }
+
+    &:active:enabled {
+        background: $button_back_color_2;
+    }
+}
+
+.Secondary {
+    background: $secondery;
+    border: none;
+    color: $primory;
+    border-radius: 50px;
+    padding: 11px 27px;
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+
+    &:hover:enabled {
+        box-shadow: 0 4px 20px 0 rgba($secondery, .4);
+    }
+
+    &:active:enabled {
+        opacity: .8;
+    }
+}
+
+
+.Link {
+    background: transparent;
+    border: none;
+    color: $primory;
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    font-size: 13px;
+    padding: 2.5px 10px;
+    cursor: pointer;
+
+    &:hover:enabled {
+        opacity: .8;
+    }
+
+    &:active:enabled {
+        opacity: .7;
+    }
+}
+
+
+.Link_secondary {
+    background: transparent;
+    border: none;
+    color: $secondery;
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    font-size: 13px;
+    padding: 2.5px 10px;
+    cursor: pointer;
+
+    &:hover:enabled {
+        opacity: .8;
+    }
+
+    &:active:enabled {
+        opacity: .7;
+    }
+}
+
+
+.disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+
+.ButtonIcon {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25em;
+}

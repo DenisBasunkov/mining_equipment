@@ -1,0 +1,16 @@
+.button_Drop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+}
+
+.Drop_menu {
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+
+}

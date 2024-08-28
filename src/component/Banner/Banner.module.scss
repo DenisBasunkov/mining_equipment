@@ -1,0 +1,219 @@
+@import "../../assets/global";
+
+
+.Banner_container {
+    position: relative;
+
+    width: 100%;
+    max-width: 780px;
+
+
+    height: 440px;
+    background: $gradient;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px 0 rgba(#00075E, .1) inset;
+    overflow: hidden;
+    box-sizing: border-box;
+    color: $secondery;
+    font-family: "Nunito Sans";
+    font-weight: 800;
+
+    &::after {
+        position: absolute;
+        content: '';
+        background-image: url('./Fone.png');
+        background-size: 85% 110%;
+        background-repeat: no-repeat;
+        top: -5%;
+        left: -50px;
+        width: 100%;
+        height: 110%;
+        z-index: 0;
+        opacity: .3;
+    }
+
+    h1 {
+        font-size: 38px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+}
+
+.Svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.Back_svg {
+    fill: #346EA4;
+    opacity: .2;
+}
+
+.Back_svg_m {
+    display: none;
+}
+
+.Info_Banner {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.Text_Banner {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+}
+
+.Img_Banner {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.position {
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    z-index: 1;
+}
+
+.Banner_f_container {
+    position: relative;
+    width: 380px;
+    height: 440px;
+    border-radius: 10px;
+    background: $radioGradient;
+    color: $secondery;
+    font-family: "Nunito Sans";
+    font-weight: 800;
+
+    h1 {
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+
+}
+
+.Banners_container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+}
+
+@media(max-width:450px) {
+    .Banners_container {
+        width: 100%;
+        flex-direction: column;
+
+        // & * {
+        //     // border: 1px solid red;
+        // }
+    }
+
+    .Banner_container {
+        width: 95%;
+        height: 400px;
+
+        &::after {
+            background-size: 150% 110%;
+            background-position: 50% 280%;
+            top: 0;
+            left: 0;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: -10%;
+            right: -50%;
+            width: 75%;
+            height: 75%;
+            background-color: #346EA4;
+            border-radius: 50%;
+            opacity: .2;
+
+        }
+
+    }
+
+    .Banner_f_container {
+        width: 95%;
+    }
+
+    .Text_Banner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 250px;
+
+        & h1 {
+            font-size: 22px;
+        }
+
+        & p {
+            font-size: 16px;
+        }
+    }
+
+
+    .Info_Banner {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        // border: 5px dotted yellow;
+    }
+
+
+    .position {
+        bottom: 20px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .Img_Banner {
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        bottom: -10%;
+        right: -15%;
+    }
+
+    .Back_svg {
+        display: none;
+    }
+
+}
+
+@media (min-width:840px) {
+    .Banners_container {
+        width: 90%;
+        flex-direction: row;
+    }
+}

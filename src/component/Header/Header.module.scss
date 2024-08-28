@@ -1,0 +1,154 @@
+@import "../../assets/global";
+
+@media(max-width:450px) {
+    .Header_container {
+        display: none;
+    }
+
+    .HeaderNav_container {
+        display: none;
+    }
+
+    .MenuMobile_container {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 100;
+        box-sizing: border-box;
+        box-shadow: 0 4px 20px 0 rgba(#00075E, .1);
+    }
+
+}
+
+@media (min-width:840px) {
+
+    .Header_container {
+        width: 100%;
+        box-sizing: border-box;
+        background-color: $primory;
+        padding: 10px;
+    }
+
+    .HeaderNav_container {
+
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+        background-color: $secondery;
+        box-shadow: 0 4px 20px 0 rgba(#00075E, .1);
+
+    }
+
+    .MenuMobile_container {
+        display: none;
+    }
+
+}
+
+.Label_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+
+}
+
+
+.Title {
+    background: $gradient;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-weight: 800;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.iconBack {
+    border: none;
+    color: $gradient;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.DropDown {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Nunito Sans";
+    color: #303239;
+}
+
+.NavMenu {
+
+    width: 100%;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Input {
+    width: 100%;
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1.5em;
+    gap: 15px;
+    background-color: #F0F5FB;
+    margin-bottom: 15px;
+
+    & input {
+        font-size: 14px;
+        font-family: "Nunito Sans";
+        font-weight: 400;
+        color: rgba($primory, .8);
+        border: none;
+        background-color: transparent;
+        caret-color: #303239;
+
+
+        &:hover {
+            outline: none;
+        }
+
+        &::placeholder {
+            font-family: "Nunito Sans";
+            font-weight: 400;
+            color: rgba($primory, .3);
+        }
+    }
+
+}
+
+.DropDownMenu {
+
+    padding: 5px 5px 25px;
+
+}
+
+.Mobile_button {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    padding: 5px;
+}
+
+.Label_info_mobile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    font-size: 14px;
+    font-family: "Nunito Sans";
+    font-weight: 400;
+}

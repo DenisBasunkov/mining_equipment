@@ -1,0 +1,37 @@
+@import "../../assets/global";
+
+.Footer_container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 60px;
+    background-color: $primory;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+
+}
+
+.List {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+
+}
+
+
+@media(max-width:450px) {
+    .Footer_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding: 50px 40px;
+    }
+
+    .List {
+        gap: 15px;
+    }
+
+}
