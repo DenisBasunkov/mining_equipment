@@ -30,7 +30,7 @@ const Advantages = () => {
                 textTransform="uppercase" color="#fff">наши преимущества</Title_list>
         </div>
         <svg className={styles.SVG}>
-            <image href="/video_svg.svg" />
+            <image href="./video_svg.svg" />
         </svg>
         <div className={styles.list_Advantag}>
             <Advantages_item

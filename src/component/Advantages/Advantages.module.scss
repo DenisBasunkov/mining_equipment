@@ -68,13 +68,10 @@
     padding: 40px 50px;
     border-radius: 10px;
     box-shadow: $shadow;
-    background: url("./bg_image.svg");
+    background: url("./bg_image.svg"), $button_back_color_2;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    // background: $button_back_color_2 ;
-
     display: flex;
     flex-direction: column;
 

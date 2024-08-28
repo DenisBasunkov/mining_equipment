@@ -11,27 +11,27 @@ export const About: React.FC<IAboutProps> = ({ }) => {
 
     const arr = [{
         text: "Работаем без выходных – 7 дней в неделю",
-        icon: "/Calendar.svg"
+        icon: "./Calendar.svg"
     },
     {
         text: "Прямое сотрудничество с поставщиками",
-        icon: "/Group.svg"
+        icon: "./Group.svg"
     },
     {
         text: "Быстрая авиадоставка от 14 дней",
-        icon: "/Air.svg"
+        icon: "./Air.svg"
     },
     {
         text: "Предоплата за предзаказ от 30%",
-        icon: "/Graf.svg"
+        icon: "./Graf.svg"
     },
     {
         text: "Официальный договор, полная защита средств",
-        icon: "/List.svg"
+        icon: "./List.svg"
     },
     {
         text: "Видеопроверка для удаленных клиентов",
-        icon: "/Camera.svg"
+        icon: "./Camera.svg"
     }]
 
     const iswidth = window.innerWidth < 450
@@ -51,7 +51,7 @@ export const About: React.FC<IAboutProps> = ({ }) => {
                     Если вы хотите купить асики оптом, то с нами можете быть уверены как в качестве техники, так и в надёжности сотрудничества. Лучше всего о нас говорит репутация!
                 </p>
             </div>
-            <img src="/CPUs1.svg" height={"100%"} className={styles.Image} />
+            <img src="./CPUs1.svg" height={"100%"} className={styles.Image} />
 
         </div>
         <div className={styles.About_info_Items}>
