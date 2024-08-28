@@ -41,7 +41,7 @@ export const Banner_f = () => {
                 <p style={{ fontSize: "18px", fontWeight: "600" }}>на все товары Antminer</p>
             </div>
         </div>
-        <img src="/svg.svg" width={216} style={{ position: "absolute", bottom: "25px", left: "8px" }} />
+        <img src="./svg.svg" width={216} style={{ position: "absolute", bottom: "25px", left: "8px" }} />
         <Primary_button appearance="link_secondary" style={{ fontSize: "20px", position: "absolute", bottom: "25px", right: "8px", display: "flex", alignItems: "center" }}>В каталог  <strong >→</strong></Primary_button>
     </div>
 
