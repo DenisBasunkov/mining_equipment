@@ -74,7 +74,8 @@ export const Product_Card: React.FC<IProduct_CardProps> = ({ stock, isFavorite, 
                 </button>
             </div>
             <div style={{ display: "flex", justifyContent: "center", marginTop: "5px" }}>
-                <Primary_button >Купить в 1 клик</Primary_button>
+                <Primary_button
+                >Купить в 1 клик</Primary_button>
             </div>
         </div>
     </div >

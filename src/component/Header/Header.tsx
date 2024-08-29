@@ -233,3 +233,18 @@ export const MenuMobile: React.FC<IMenuMobileProps> = () => {
     </header>
 
 }
+
+export const Headers = () => {
+
+    const isWidth = window.innerWidth < 450;
+
+    if (isWidth) {
+        return <MenuMobile />
+    } else {
+        return <>
+            <Header />
+            <HeaderNav />
+        </>
+    }
+
+}

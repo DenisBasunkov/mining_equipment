@@ -5,7 +5,7 @@ import Bestsellers from "./component/Bestsellers/Bestsellers"
 import Categories from "./component/Categories/Categories"
 import { Contacts } from "./component/Contacts/Contacts"
 import Footer from "./component/Footer/Footer"
-import { Header, HeaderNav, MenuMobile } from "./component/Header/Header"
+import { Headers } from "./component/Header/Header"
 
 
 
@@ -13,9 +13,7 @@ function App() {
 
   return (
     <>
-      <Header />
-      <HeaderNav />
-      <MenuMobile />
+      <Headers />
       <div className="Content">
         <Banners />
         <Categories />
